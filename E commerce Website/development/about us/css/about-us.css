@@ -1,0 +1,167 @@
+/* this prodives margin and padding foe whole section of html */
+*{
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  /*starting of header and extrnal css for navbar class  */
+  
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    height: 111px;
+  }
+  /* extrnal css for ul of nav-list class */
+  .nav-list ul {
+   display: flex;
+  }
+  /* extrnal css for img of logo class */
+  .logo img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+  
+  /* extrnal css for li of nav-list class */
+  .nav-list li {
+    padding: 0px 46px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* extrnal css for anchor of li of nav-list class */
+  .nav-list li a {
+    cursor: pointer;
+    color: rgb(255, 216, 205);
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-decoration: none;
+  }
+  /* extrnal css for hover effect of nav-list class */
+  .nav-list li a:hover{
+    color: rgb(89, 182, 28);
+  }
+  /* extrnal css for right-nav class */
+  .right-nav{
+    width: 50%;
+    justify-content: center;
+    text-align: right;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(90, 84, 78);
+    text-align: left;
+    background-image: url(img/bonsaii.jpg);
+    height: 180vh;
+    width: 100vh;
+    background-size: cover;
+}
+
+h1 {
+    color: black;
+    text-align: left;
+    margin: 27px 0 20px 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 3;
+    color: black;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    color:  darkblue;
+    text-align: left;
+    margin: 40px 0 20px 0;
+}
+
+li {
+    font-size: 18px;
+    line-height: 1.5;
+    color:black;
+    margin: 0 0 20px 10;
+}
+
+img{
+  border-radius: 25%;
+}
+
+
+form{
+    margin: auto;
+    background-color: #d4a373;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+form h3{
+    font-weight: 800;
+    font-size: 150%;
+    margin-bottom: 40px;
+    
+}
+form input{
+margin: 10px 0;
+padding: 10px;
+background: #f5f5f5;
+font-size: 15px;
+}
+form textarea{
+    margin: 10px 10;
+    padding: 10px;
+    background: #f5f5f5;
+    font-size: 15px;
+    outline: auto;
+   
+}
+button{
+    background-color: brown;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    width: auto;
+    margin: 20px auto 0;
+}
+
+/* extrnal css for footer-container*/
+.footer-container{
+    width: 100%;
+    background-color: rgb(111, 126, 89);
+     
+   }
+   /* extrnal css for ul in footer section that contains text*/
+   ul{
+     list-style: none;
+   }
+   /* extrnal css forfooter class */
+   .footer{
+    display: flex;
+    height: 152px;
+    justify-content: center;
+    align-items: center;
+   }
+   /* extrnal css for footer-4 class */
+   .footer-4{
+    padding: 22px 36px;
+    height: 112px;
+    margin-bottom: 79px;
+   }
+   .findus-logo{
+     height: 100px;
+     display: flex;
+   }
+   .ok{
+    width: 1800px;
+   }
+  

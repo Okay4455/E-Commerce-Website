@@ -1,0 +1,106 @@
+/* this prodives margin and padding foe whole section of html */
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+/*starting of header and extrnal css for navbar class  */
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  top: 0;
+  height: 111px;
+}
+/* extrnal css for ul of nav-list class */
+.nav-list ul {
+ display: flex;
+}
+/* extrnal css for img of logo class */
+.logo img{
+  width: 100px;
+  height: 100px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+/* extrnal css for li of nav-list class */
+.nav-list li {
+  padding: 0px 46px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+/* extrnal css for anchor of li of nav-list class */
+.nav-list li a {
+  cursor: pointer;
+  color: rgb(255, 216, 205);
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-decoration: none;
+}
+/* extrnal css for hover effect of nav-list class */
+.nav-list li a:hover{
+  color: rgb(89, 182, 28);
+}
+/* extrnal css for right-nav class */
+.right-nav{
+  width: 50%;
+  justify-content: center;
+  text-align: right;
+}
+.main{
+  margin-top: 90px;
+  margin-bottom: 120px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.heading{
+  height: 10%;
+  width: 100%;
+  align-content: center;
+  display: grid;
+  justify-content: center;
+}
+.webimage{
+height: 60%;
+}
+.researchtext{
+  height: 25%;
+  align-content: center;
+  display: grid;
+  justify-content: center;
+  font-size: x-large;
+  font-family: sans-serif;
+  padding: 16px 122px;
+}
+.webimage img{
+  width: 100%;
+  height: 100%;
+}
+/* extrnal css for footer-container*/
+.footer-container{
+  width:auto;
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(111, 126, 89);
+  
+}
+/* extrnal css for ul in footer section that contains text*/
+ul{
+  list-style: none;
+}
+/* extrnal css forfooter class */
+.footer{
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+/* extrnal css for footer-4 class */
+.footer-4{
+  padding: 24px 64px;
+  height: 100px;
+}
+

@@ -1,0 +1,150 @@
+/* this prodives margin and padding foe whole section of html */
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+/*starting of header and extrnal css for navbar class  */
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: sticky;
+  top: 0;
+  height: 111px;
+}
+/* extrnal css for ul of nav-list class */
+.nav-list ul {
+ display: flex;
+}
+/* extrnal css for img of logo class */
+.logo img{
+  width: 100px;
+  height: 100px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+/* extrnal css for li of nav-list class */
+.nav-list li {
+  padding: 0px 46px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+/* extrnal css for anchor of li of nav-list class */
+.nav-list li a {
+  cursor: pointer;
+  color: rgb(255, 216, 205);
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-decoration: none;
+}
+/* extrnal css for hover effect of nav-list class */
+.nav-list li a:hover{
+  color: rgb(89, 182, 28);
+}
+/* extrnal css for right-nav class */
+.right-nav{
+  width: 50%;
+  justify-content: center;
+  text-align: right;
+}
+
+
+/*  starting of section_1 and extrnal css for background class */
+
+.background{
+  background:url(/images/backgrounds/background.jpg);
+  background-size:100% 100%;
+
+}
+
+/* extrnal css for middle class */
+.middle{
+display: flex;
+align-items: center;
+}
+/* extrnal css for left-middle class */
+.left-middle {
+  display: flex;
+  color: rgb(20, 14, 4);
+  width: 32%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* extrnal css for left-middle-text class */
+.left-middle-text {
+  font-size: xx-large;
+  width: 76%;
+  font-family: sans-serif;
+} 
+
+
+/* starting of section_2 and css for product_div class*/
+
+.product_div{
+  background-color: rgb(138, 122, 108);
+  display: flex;
+}
+
+/* extrnal css for slider-text class */
+.slider-text{
+  width: 100%;
+  display: grid;
+  margin: auto;
+  justify-content: center;
+}
+
+/* extrnal css for middle-mainbox class */
+.middle_mainbox{
+  display: grid;
+  height: 100%;
+  width: auto;
+  background-color: #809b79;
+}
+
+/* extrnal css for middle-1 class */
+.middle-1{
+width: auto;
+height: 400px;
+
+/* extrnal css for description class */
+}
+/* extrnal css for descrition class */
+.description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* starting of css for footer part */
+
+/* extrnal css for footer-container*/
+.footer-container{
+  width:auto;
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(111, 126, 89);
+  
+}
+/* extrnal css for ul in footer section that contains text*/
+ul{
+  list-style: none;
+}
+/* extrnal css forfooter class */
+.footer{
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+/* extrnal css for footer-4 class */
+.footer-4{
+  padding: 24px 64px;
+  height: 100px;
+}
+

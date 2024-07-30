@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    
+    <title>Feedback</title>
+</head>
+<body background="/Home/Images/backgroundo">
+    
+    <div class="0K"><!--Division of class 0k-->
+        <form><!--Creating a form containing the feedback-->
+            <h3>Send us a Feedback </h3>
+            <input type="text" id="name" placeholder="Enter your Name" >
+            <input type="text" id="contact number" placeholder="Enter your Contact Number" >
+            <input type="text" id="email Id" placeholder="Enter your Email-Id" >
+            <textarea id="message" rows="4" placeholder="Write your Feedback" ></textarea><!--Allows adding multiple lines of text -->
+            <button type="submit" class="hover">Send Feedback</button>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var contactNumber = document.getElementById("contact number").value;
+            var emailId = document.getElementById("email Id").value;
+            var message = document.getElementById("message").value;
+    
+            if (name == "" || contactNumber == "" || emailId == "" || message == "") {
+                alert("All fields are required. Please fill in all the details.");
+                return false;
+            } else {
+                alert("Thank you for your feedback!");
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
+   

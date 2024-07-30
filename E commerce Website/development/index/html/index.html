@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decor with Bonsai</title> 
+        <link rel="stylesheet" href="/index/css/index.css">  <!-- linking external css  -->
+        <style type="text/css">
+            /* internal css  */
+            .slider 
+            {
+                display: flex;
+                box-sizing: hidden;
+                direction: rtl;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .product_div{
+            display: flex;
+            }
+        </style>
+    </head>
+           <!-- staring of body -->
+    <body>
+        <!-- creating divison for wrapper -->
+        <div style="height: 3070px;">
+            
+            <section_1  style="height: 870px;">
+                <!-- providing header tag -->
+                <header>
+                    <nav class="navbar" style="height: 120px; background-color: rgb(73, 65, 55);"><!--addiing inline css for navbar -->
+                        <!-- creatng divison for logo -->
+                        <div class=logo style="height: 100px; width: 100px; margin:20px;"><!--addiing inline css for logo -->
+                         <img src="/index/images/logo/logo.jpg" alt="logo" ;>
+                        </div>
+                           <!-- creating divison for items in navbar -->
+                        <div class="nav-list">
+                            <ul> <!--provding anchor tag>  -->
+                                <li><a href="#" class="hover">HOME</a></li>
+                                <li><a href="/blog page/blogs.html" class="hover">BLOGS</a></li>
+                                <li><a href="/product page/html/Productspage.html" class="hover">PRODUCTS</a></li>
+                                <li><a href="/research page/html/research.html" class="hover">RESEARCH</a></li>
+                                <li><a href="/about us/html/About Us.html" class="hover" style=width:80px;>ABOUT US</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <!-- divison for content about Quote and background-->
+                <div class=" middle >" style="height: 750px; background-image: url(/index/images/backgrounds/background.jpg);background-size:100% 100%;"> <!--addiing inline css for content about Quote and background-  -->
+            
+                    <div class="left-middle">
+                        <p>
+                            <h1 class="left-middle-text">
+                            "Like the bonsai, we too can learn to adapt and thrive in the constraints of our environment."
+                            </h1>
+                        </p>
+                    </div>
+                            
+                </div>
+            </section_1>
+               
+            <section_2 style="height: 300px;">  <!--addiing inline css for section_2 -->
+                <!-- divison for section_2 which contains offer product images and text  -->
+                <div class="product_div">
+                    <!-- divison for text -->
+                    <div class="slider-text">
+                        <div>
+                          <h3> STOCK CLERANCE SALE</h3>
+                        </div>
+
+                        <div style="font-size: xx-large; ">
+                            UP TO 50 % OFF
+                        </div>
+                        
+                        <div style="margin: 5px 0px;" >
+                            <h3>STARTING JUST AT $250</h3>
+                        </div>
+                    </div>
+                     <!-- divison for product slider that shoes imags in slid -->
+                    <div class="slider" >
+                        <div id="img">
+                            <img src="/index/images/productsimg/p1.jpeg">
+                        </div>
+                    </div>
+                      <!-- java script for image slider -->
+                    <script>
+                        var image = ['/index/images/productsimg/p1.jpeg','/index/images/productsimg/p2.jpeg','/index/images/productsimg/p3.jpeg','/index/images/productsimg/p4.jpeg']
+                        var x = 0;
+                        var imgs = document.getElementById('img');
+                        setInterval(silder, 3500);
+                        function silder() {
+                            if (x < image.length) {
+                                x = x + 1;
+                            }
+                            else {
+                                x = 1;
+                            }
+                            imgs.innerHTML = "<img src=" + image[x - 1] + ">" ;
+                        }
+                    </script>
+                </div>
+            </section_2>
+        
+            <section_3 class="middle_mainbox " style="height: 1600px;">  <!--addiing inline css for section_3 -->
+                <!-- divison for blog page descripton and image   -->
+                    <div class="middle-1 description" style="background-color: rgb(161, 152, 112);padding: 0px 45px; height: 400px; ">  <!--addiing inline css for divison -->
+                        <div>
+                            <h2>BLOGS PAGE</h2><br>
+                            <p style=" font-size: x-large; width: 95%; padding: 0px 20 px;" > <!--addiing inline css for text -->
+                                "The blog page titled "Technology and its Impact on Daily Life and Business"
+                                will feature in-depth analysis and discussion on how technology advancements 
+                                have transformed various aspects of our daily lives and businesses. From the 
+                                way we communicate, shop, work, and entertain ourselves, to how companies operate,
+                                the blog will cover a wide range of topics and perspectives to provide a holistic
+                                understanding of the topic. It will also explore the opportunities and challenges
+                                that arise with the increasing integration of technology in our lives."
+                            </p>
+                        </div>
+                          <!-- divison for image -->
+                        <div >
+                            <img src="/index/images/descripton_image/technology.jpg" style=" width: 447px; height: 211px; border: 2px solid white; border-radius: 7%; " alt="ownerimg" ;>                   
+                        </div>
+
+                    </div>   
+                    <!-- divison for product page descripton and image   -->
+                    <div class="middle-1 description" style="background-color: rgb(161, 152, 112);padding: 0px 45px; height: 400px;" >   <!--addiing inline css for divison -->
+                         <!-- divison for image -->
+                        <div >
+                            <img src="/index/images/descripton_image/products.jpg" style="width: 447px; height: 211px; border: 2px solid white; border-radius: 7%; "  alt="ownerimg" ;>                   
+                        </div>
+                         <!-- divison for text -->
+                        <div style="padding: 0px 20px;">  <!--addiing inline css for divison -->
+                            <h2>PRODUCTS PAGE</h2><br>
+                            <p style=" font-size: x-large; width: 95%; padding: 0px 20 px; " > <!--addiing inline css for text -->
+                                 The products page will feature a comprehensive list of all the products available 
+                                 for purchase on the website. Each product will be displayed with its name, a detailed
+                                 description, actual  and discounted prices, and other relevant details such as product 
+                                 dimensions, weight, available colors, and warranty information. The page will also 
+                                 include high-resolution images of the products to give customers a clear idea of what 
+                                 they are buying.
+                            </p>
+                        </div>
+
+                    </div>  
+
+                    <div class="middle-1 description" style = " background:rgb(161, 152, 112);padding: 0px 45px; height: 400px;"> <!--addiing inline css for divison -->
+                        <!-- divison for text -->
+                        <div >
+                            <h2>RESEARCH PAGE</h2><br>
+                            <p style=" font-size: x-large; width: 95%;" > <!--addiing inline css for text -->
+                                The research section of our website
+                                will provide a detailed analysis of the components used on our website, in
+                                comparison to other websites that have been investigated for research purposes. 
+                                The purpose of this section is useful for website visitors to understand the 
+                                design choices we made for our website.
+                            </p>
+                       </div>
+                          <!-- divison for image -->
+                        <div >
+                         <img src="/index/images/descripton_image/research.jpg" style=" width: 447px; height: 211px; border: 2px solid rgb(255, 250, 250); border-radius: 7%; "  alt="ownerimg" ;>                   
+                        </div>
+
+                    </div>   
+                     
+                    <div class="middle-1 description"style = " padding: 0px 88px; height: 400px; " ><!--addiing inline css for divison -->
+                        <div>
+                            <h2 style=" padding: 19px 607px;">ABOUT US PAGE</h2><br>
+                            <p style=" font-size: x-large; width: 95%;" > <!--addiing inline css for text -->
+                                The "About Us" section will have a detailed
+                                portfolio of our team members, including their  technical and soft skills, educational 
+                                background, volunteering experience, certifications, etc. It will also include information 
+                                about the company's mission, vision and values, as well as contact information. Visitors 
+                                will be able to understand the team behind the website and trust the organization by getting 
+                                to know their experience and expertise.
+                            </p>
+                        </div>
+                    </div>                                                   
+            </section_3>
+            <section class="time-table" style="background-color:#809b79;">
+                <div style="width: 800px;margin-left: 25%; padding: 30px;">
+                    <h3>Store Open hours</h3>
+                    <!-- creating table for time table of store -->
+                    <table bgcolor="grey" border="Glossary">
+                        <tr>
+                        <th width="100">Sunday</th>
+                        <th width="100">monday</th>
+                        <th width="100">tuesday</th>
+                        <th width="100">Wednesday</th>
+                        <th width="100">Sunday</th>
+                        <th width="100">Sunday</th>
+                        <th width="100">Sunday</th>
+                        </tr>
+                        <tr bgcolor="lightgrey" align="center">
+                            <td>Closed</td>
+                            <td>9-5</td>
+                            <td>9-5</td>
+                            <td>9-5</td>
+                            <td>9-5</td>
+                            <td>9-5</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+              </div>
+            </section>
+        
+            <footer class="footer-container" style="height: 200px;">   <!--addiing inline css for footer-container that includes footer section -->
+                <!-- divison for footer texts and images-->
+                <div class="footer">
+                    <!-- divison for text -->
+                    <div class=" footer-1" style=" padding: 24px 64px;"> <!--addiing inline css for footer-1 -->
+                        <h2>Bonsai Care</h2>
+                        <ul>
+                            <li>Recommended Care</li>
+                            <li>Styles of Bonsai</li>
+                            <li>Glossary of Terms</li>
+                            <li>Blogs</li>
+                        </ul>
+                    </div>
+                  <!-- divison for text -->
+                    <div class="footer-2"  style=" padding: 24px 64px;">  <!--addiing inline css for footer-2 -->
+                        <h2> About us</h2>
+                        <ul>
+                            <li>our services</li>
+                            <li>expertise</li>
+                            <li>targets</li>
+                            <li>features</li>
+                        </ul>
+
+                    </div>
+                    <!-- divison for text-->
+                    <div class="footer-3" style=" padding: 24px 64px;">    <!--addiing inline css for footer-2 -->
+                        <h2>Shop with Confidence</h2>
+                        <ul>
+                            <li>Our 100% Guarantee</li>
+                            <li>Product Warranty</li>
+                            <li>Hassle-Free Returns</li>
+                            <li>How to Order</li>
+                        </ul>
+
+                    </div>
+                  
+                    <div class=" footer-4" >
+                     <!-- divison for text and image -->
+                        <h2>Find us on</h2>
+                        <img src="/index/images/find us logo/Facebook-Logo.png" alt="fb" style="  width: 16px; height: 15px;">
+                        <img src="/index/images/find us logo/instagram.png" alt="insta" style="  width: 16px; height: 15px;">
+                        <img src="/index/images/find us logo/YouTube.png" alt="yt" style="  width: 16px; height: 15px;">
+                    </div>
+                    <!-- divison for text and image -->
+                    <div class="footer-5">
+                        <h2> Map</h2>
+                        <img src="/index/images/find us logo/map.png" alt="Map" style=" width: 85px; height: 68px;">
+                    </div>
+                </div>      
+            </footer>
+        </div>
+    </body>
+</html>

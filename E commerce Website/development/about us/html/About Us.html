@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="stylesheet"  href="/about us/css/about-us.css">
+      
+    <title>About Us</title>
+  </head>
+        
+    <header style=" width: 1900px;">
+        <nav class="navbar" style="height: 120px;width:100% ; background-color: rgb(43, 36, 27);"><!--addiing inline css for navbar -->
+            <!-- creatng divison for logo -->
+            <div class=logo style="height: 100px; width: 100px; margin:20px;"><!--addiing inline css for logo -->
+            <img src="/index/images/logo/logo.jpg" alt="logo" ;>
+            </div>
+            <!-- creating divison for items in navbar -->
+            <div class="nav-list">
+                <ul> <!--provding anchor tag>  -->
+                    <li><a href="/index/html/index.html" class="hover">HOME</a></li>
+                    <li><a href="/blog page/blogs.html" class="hover">BLOGS</a></li>
+                    <li><a href="/product page/html/Productspage.html" class="hover">PRODUCTS</a></li>
+                    <li><a href="/research page/html/research.html" class="hover">RESEARCH</a></li>
+                    <li><a href="/about us/html/About Us.html" class="hover" style= width:103px;>ABOUT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <body style="height: 100px;width: 1000px;">         
+        <!-- divison for wrapper -->
+        <div style="height: 1000px; width: 100%;" >
+            <div class="first" style="height: 560px; width: 100%; padding-left: 20%;">
+                <div style="height: 100%;width: 80%;">
+                    <h1>About Us</h1>
+                    <p>We are a team of dedicated professionals,
+                        working together to achieve a common goal.
+                        Our company was founded in 2005 and since then
+                        we've been providing top-quality products
+                        and services to our customers.</p>
+
+                    <p>Our mission is to make a positive impact in the world,
+                        by developing innovative and sustainable solutions.</p>
+                    
+                    <h2>Contact Us</h2>
+                    <p>Email: info@ourcompany.com</p>
+                    <p>Phone: 555-555-5555</p>
+                </div>
+            </div>
+            <div style="height: 150px;width: 1278px; margin: auto; justify-content: center; display: flex;">
+            <h1 >Our Team</h1>
+            </div>
+            <!-- divison for profiles and links  -->
+            <div style="height: 300px;width: 100%;padding-left:30%;display: flex;">
+                <img src="/about us/img/leaderG.jpg" height="200px" >
+                <p><a href="/about us/html/CV_Prajwal_Ghising.html">Prajwol Ghising - Managing Director</a></p>
+                <img src="/about us/img/meG.jpg" height="200px" >
+                <p><a href="/about us/html/CV_Amish_Thapa.html">Amish Thapa - Social media manager</a></p>
+                <img src="/about us/img/simonG.jpg" height="200px">
+                <p><a href="/about us/html/CV_Simon_Gurung.html">Sonam Gurung - Customer service representative</a></p>
+            </div>
+            <!-- divison for form -->
+            <div style="height: 500px; width: 1580px; margin: auto;">
+
+                <div class="0K">
+                    <form onsubmit="return validateForm()">
+                        <h3>Send us a Feedback </h3>
+                        <input type="text" id="name" placeholder="Enter your Name">
+                        <input type="text" id="contact number" placeholder="Enter your Contact Number">
+                        <input type="text" id="email Id" placeholder="Enter your Email-Id">
+                        <textarea id="message" rows="4" placeholder="Write your Feedback"></textarea>
+                        <button type="submit">Send Feedback</button>
+                    </form>
+                </div>
+                <script>
+                    function validateForm() {
+                        var name = document.getElementById("name").value;
+                        var contactNumber = document.getElementById("contact number").value;
+                        var emailId = document.getElementById("email Id").value;
+                        var message = document.getElementById("message").value;
+            
+                        if (name == "" || contactNumber == "" ||emailId == "" || message == "") {
+                            alert("All fields are required. Please fill in all the details.");
+                            return false;                     
+                        } else {
+                            alert("Thank you for your feedback!");
+                            return true;
+                        }
+                    }
+                </script>
+            </div>
+              
+            <footer class="footer-container" style="height: 200px;width: 1900px; margin-top: 20px;">   <!--addiing inline css for footer-container that includes footer section -->
+                <!-- divison for footer texts and images-->
+                <div class="footer">
+                    <!-- divison for text -->
+                    <div class=" footer-1" style=" padding: 24px 64px;"> <!--addiing inline css for footer-1 -->
+                        <h2>Bonsai Care</h2>
+                        <ul>
+                            <li>Recommended Care</li>
+                            <li>Styles of Bonsai</li>
+                            <li>Glossary of Terms</li>
+                            <li>Blogs</li>
+                        </ul>
+                    </div>
+                    <!-- divison for text -->
+                    <div class="footer-2"  style=" padding: 24px 64px;">  <!--addiing inline css for footer-2 -->
+                        <h2> About us</h2>
+                        <ul>
+                            <li>our services</li>
+                            <li>expertise</li>
+                            <li>targets</li>
+                            <li>features</li>
+                        </ul>
+
+                    </div>
+                    <!-- divison for text-->
+                    <div class="footer-3" style=" padding: 24px 64px;">    <!--addiing inline css for footer-2 -->
+                        <h2>Shop with Confidence</h2>
+                        <ul>
+                            <li>Our 100% Guarantee</li>
+                            <li>Product Warranty</li>
+                            <li>Hassle-Free Returns</li>
+                            <li>How to Order</li>
+                        </ul>
+
+                    </div>
+                
+                    <div class=" footer-4" >
+                    <!-- divison for text and image -->
+                        <h2>Find us on</h2>
+                        <img src="/index/images/find us logo/Facebook-Logo.png" alt="fb" style="  width: 16px; height: 15px;">
+                        <img src="/index/images/find us logo/instagram.png" alt="insta" style="  width: 16px; height: 15px;">
+                        <img src="/index/images/find us logo/YouTube.png" alt="yt" style="  width: 16px; height: 15px;">
+                    </div>
+                    <!-- divison for text and image -->
+                    <div class="footer-5">
+                        <h2> Map</h2>
+                        <img src="/index/images/find us logo/map.png" alt="Map" style=" width: 85px; height: 68px;">
+                    </div>
+                </div>
+                
+            </footer>
+        </div>
+    </body>
+</html>
